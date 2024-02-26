@@ -233,3 +233,10 @@ body{
         display: block;
     }
 }
+
+
+@media screen and (max-width:480px){
+    .sale-image__offer{
+        font-size: 5px;
+    }
+}
