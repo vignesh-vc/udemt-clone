@@ -39,6 +39,7 @@
 
         <div class="navbar__s3">
             <p>Courses</p>
+
             <!--<p>My Learning</p>-->
             <div class="mylearning">
                 <p>My Learning</p>
@@ -54,10 +55,21 @@
         </div>
 
         <div class="navbar__s4">
-            <i class="fa-solid fa-bars" style="color: #000000;"></i>
+            <i id="menuicon" class="fa-solid fa-bars" style="color: #000000;"></i>
         </div>
     </div>
 
+    <!--sidenav-->
+    <nav id="sidenav">
+        <div>
+            <p id="closenav">X</p>
+        </div>
+        <ul id="sidenav_list">
+            <li><a href="#course">Course</a></li>
+            <li><a href="#most popular">Most Popular</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!--categories-->
 
@@ -82,45 +94,46 @@
 
     <!--recommended-->
 
-    <div class="recommended">
-        <h1 class="recommended__title">Recommended for you</h1>
-        <p>Pick the best fit</p>
+    <section id="course">
+        <div class="recommended">
+            <h1 class="recommended__title">Recommended for you</h1>
+            <p>Pick the best fit</p>
 
-        <div class="recommended__container">
-            <div class="course__card">
-                <img src="./images/c1.jpg" alt="">
-                <h3>2023 Python Data Visaulisation Masterclass</h3>
-                <p>Col Steele</p>
-                <p>4.9⭐⭐⭐⭐</p>
-                <p>999<del> 2999</del></p>
-            </div>
+            <div class="recommended__container">
+                <div class="course__card">
+                    <img src="./images/c1.jpg" alt="">
+                    <h3>2023 Python Data Visaulisation Masterclass</h3>
+                    <p>Col Steele</p>
+                    <p>4.9⭐⭐⭐⭐</p>
+                    <p>999<del> 2999</del></p>
+                </div>
 
-            <div class="course__card">
-                <img src="./images/c2.jpg" alt="">
-                <h3>Web DevelopmentBootcamp 2023</h3>
-                <p>Col Steele</p>
-                <p>4.9⭐⭐⭐</p>
-                <p>449<del> 1599</del></p>
-            </div>
+                <div class="course__card">
+                    <img src="./images/c2.jpg" alt="">
+                    <h3>Web DevelopmentBootcamp 2023</h3>
+                    <p>Col Steele</p>
+                    <p>4.9⭐⭐⭐</p>
+                    <p>449<del> 1599</del></p>
+                </div>
 
-            <div class="course__card">
-                <img src="./images/c3.jpg" alt="">
-                <h3>Master UI/UX Designing with Figma</h3>
-                <p>Col Steele</p>
-                <p>3.9⭐⭐⭐⭐</p>
-                <p>799<del> 2999</del></p>
-            </div>
+                <div class="course__card">
+                    <img src="./images/c3.jpg" alt="">
+                    <h3>Master UI/UX Designing with Figma</h3>
+                    <p>Col Steele</p>
+                    <p>3.9⭐⭐⭐⭐</p>
+                    <p>799<del> 2999</del></p>
+                </div>
 
-            <div class="course__card">
-                <img src="./images/c4.jpg" alt="">
-                <h3>Basic to Advanced Javascript Course</h3>
-                <p>Col Steele</p>
-                <p>4.9⭐⭐⭐⭐</p>
-                <p>1209 <del> 2999</del></p>
+                <div class="course__card">
+                    <img src="./images/c4.jpg" alt="">
+                    <h3>Basic to Advanced Javascript Course</h3>
+                    <p>Col Steele</p>
+                    <p>4.9⭐⭐⭐⭐</p>
+                    <p>1209 <del> 2999</del></p>
+                </div>
             </div>
         </div>
-    </div>
-
+    </section>
     <!--Topic-->
 
     <div class="topics">
@@ -140,77 +153,78 @@
     </div>
 
     <!--Popular section-->
+    <section id="most popular">
+        <div class="popular">
+            <h1 class="popular__title">
+                Most Popular
+            </h1>
+            <p class="popular__subtitle">Pick the best fit</p>
 
-    <div class="popular">
-        <h1 class="popular__title">
-            Most Popular
-        </h1>
-        <p class="popular__subtitle">Pick the best fit</p>
+            <div class="popular__container">
+                <div class="course__card">
+                    <img src="./images/c1.jpg" alt="">
+                    <h3>2023 Python Data Visaulisation Masterclass</h3>
+                    <p>Col Steele</p>
+                    <p>4.9⭐⭐⭐⭐</p>
+                    <p>999<del> 2999</del></p>
+                </div>
 
-        <div class="popular__container">
-            <div class="course__card">
-                <img src="./images/c1.jpg" alt="">
-                <h3>2023 Python Data Visaulisation Masterclass</h3>
-                <p>Col Steele</p>
-                <p>4.9⭐⭐⭐⭐</p>
-                <p>999<del> 2999</del></p>
-            </div>
+                <div class="course__card">
+                    <img src="./images/c2.jpg" alt="">
+                    <h3>Web DevelopmentBootcamp 2023</h3>
+                    <p>Col Steele</p>
+                    <p>4.9⭐⭐⭐</p>
+                    <p>449<del> 1599</del></p>
+                </div>
 
-            <div class="course__card">
-                <img src="./images/c2.jpg" alt="">
-                <h3>Web DevelopmentBootcamp 2023</h3>
-                <p>Col Steele</p>
-                <p>4.9⭐⭐⭐</p>
-                <p>449<del> 1599</del></p>
-            </div>
+                <div class="course__card">
+                    <img src="./images/c3.jpg" alt="">
+                    <h3>Master UI/UX Designing with Figma</h3>
+                    <p>Col Steele</p>
+                    <p>3.9⭐⭐⭐⭐</p>
+                    <p>799<del> 2999</del></p>
+                </div>
 
-            <div class="course__card">
-                <img src="./images/c3.jpg" alt="">
-                <h3>Master UI/UX Designing with Figma</h3>
-                <p>Col Steele</p>
-                <p>3.9⭐⭐⭐⭐</p>
-                <p>799<del> 2999</del></p>
-            </div>
-
-            <div class="course__card">
-                <img src="./images/c4.jpg" alt="">
-                <h3>Basic to Advanced Javascript Course</h3>
-                <p>Col Steele</p>
-                <p>4.9⭐⭐⭐⭐</p>
-                <p>1209 <del> 2999</del></p>
-            </div>
-            <div class="course__card">
-                <img src="./images/c3.jpg" alt="">
-                <h3>Master UI/UX Designing with Figma</h3>
-                <p>Col Steele</p>
-                <p>3.9⭐⭐⭐⭐</p>
-                <p>799<del> 2999</del></p>
-            </div>
-            <div class="course__card">
-                <img src="./images/c2.jpg" alt="">
-                <h3>Web DevelopmentBootcamp 2023</h3>
-                <p>Col Steele</p>
-                <p>4.9⭐⭐⭐</p>
-                <p>449<del> 1599</del></p>
-            </div>
-            <div class="course__card">
-                <img src="./images/c3.jpg" alt="">
-                <h3>Master UI/UX Designing with Figma</h3>
-                <p>Col Steele</p>
-                <p>3.9⭐⭐⭐⭐</p>
-                <p>799<del> 2999</del></p>
-            </div>
-            <div class="course__card">
-                <img src="./images/c1.jpg" alt="">
-                <h3>2023 Python Data Visaulisation Masterclass</h3>
-                <p>Col Steele</p>
-                <p>4.9⭐⭐⭐⭐</p>
-                <p>999<del> 2999</del></p>
+                <div class="course__card">
+                    <img src="./images/c4.jpg" alt="">
+                    <h3>Basic to Advanced Javascript Course</h3>
+                    <p>Col Steele</p>
+                    <p>4.9⭐⭐⭐⭐</p>
+                    <p>1209 <del> 2999</del></p>
+                </div>
+                <div class="course__card">
+                    <img src="./images/c3.jpg" alt="">
+                    <h3>Master UI/UX Designing with Figma</h3>
+                    <p>Col Steele</p>
+                    <p>3.9⭐⭐⭐⭐</p>
+                    <p>799<del> 2999</del></p>
+                </div>
+                <div class="course__card">
+                    <img src="./images/c2.jpg" alt="">
+                    <h3>Web DevelopmentBootcamp 2023</h3>
+                    <p>Col Steele</p>
+                    <p>4.9⭐⭐⭐</p>
+                    <p>449<del> 1599</del></p>
+                </div>
+                <div class="course__card">
+                    <img src="./images/c3.jpg" alt="">
+                    <h3>Master UI/UX Designing with Figma</h3>
+                    <p>Col Steele</p>
+                    <p>3.9⭐⭐⭐⭐</p>
+                    <p>799<del> 2999</del></p>
+                </div>
+                <div class="course__card">
+                    <img src="./images/c1.jpg" alt="">
+                    <h3>2023 Python Data Visaulisation Masterclass</h3>
+                    <p>Col Steele</p>
+                    <p>4.9⭐⭐⭐⭐</p>
+                    <p>999<del> 2999</del></p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
     <!--footer-->
-
+<section id="contact">
     <div class="footer">
         <div class="footer__one">
             <div class="footer__one--s1">
@@ -233,18 +247,10 @@
             <p>&copy; 2023 Udemy,Inc</p>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
+</section>
 
 
 </body>
+<script src="script.js"></script>
 
 </html>
